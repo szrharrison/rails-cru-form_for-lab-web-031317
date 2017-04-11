@@ -1,0 +1,13 @@
+<h3>Edit <%= @song.name %></h3>
+<%= form_for(@song) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %> <!-- <input name="artist[name]" -->
+<p></p>
+<%= f.label :artist_id %>
+<%= f.number_field :artist_id %> <!-- <input name="artist[name]" -->
+<p></p>
+<%= f.label :genre_id %>
+<%= f.number_field :genre_id %> <!-- <input name="artist[name]" -->
+<p></p>
+<%= f.submit %>
+<% end %>

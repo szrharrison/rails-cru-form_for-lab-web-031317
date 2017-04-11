@@ -1,0 +1,7 @@
+<h3>Create a New Genre</h3>
+<%= form_for(@genre) do |f| %> <!-- action="/artist" method="post" -->
+<%= f.label :name %>
+<%= f.text_field :name %> <!-- <input name="artist[name]" -->
+<p></p>
+<%= f.submit %>
+<% end %>
